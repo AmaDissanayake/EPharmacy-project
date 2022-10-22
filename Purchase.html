@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="StyleS4.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            LET'S PLACE YOUR ORDER
+        </div>
+        <div class="form">
+            <div class="inputfield">
+                <label>Search For The Medicine Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Medicine Category</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Buying Quantity</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Buyer Username</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Please Select The Pharmacy Category</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="male">SPC Pharmacies</option>
+                        <option value="female">Link Dealer Pharmacies</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Total Price</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Phone Number</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <input type="submit" value="Send Request" class="btn">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

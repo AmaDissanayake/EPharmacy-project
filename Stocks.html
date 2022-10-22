@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Stocks</title>
+    <link rel="stylesheet" href="StyleS3.css">
+</head>
+<body>
+    <div id="BigCont">
+        <div id="Ti"><h1>Stock</h1></div>
+        <br><br>
+            <div id="Bloc1">
+                <input type="text" name="" id="MName" placeholder="Medicine Name">
+                <input type="text" name="" id="MType" placeholder="Medicine Category">
+                <input type="number" name="" id="MQty" placeholder="Quantity">
+                <input type="number" name="" id="MPrice" placeholder="Price">
+                <div class="dropdown">
+                    <button class="dropbtn">Updated By</button>
+                    <div class="dropdown-content">
+                        <a href="#">Manufacturing plant</a>
+                        <a href="#">Warehouse staff</a>
+                    </div>
+                </div>
+            </div><br><br>
+                  <div id="BtDiv">
+                      <button>Add</button>   <button>Update</button>   <button>Delete</button>   <button>Back</button>
+                  </div>
+        <div id="GVDiv">
+
+            <asp:GridView ID="StocksGV" runat="server" Width="938px">
+            </asp:GridView>
+
+        </div>
+    </div>
+
+</body>
+</html>
